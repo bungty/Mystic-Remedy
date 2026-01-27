@@ -1,0 +1,154 @@
+# The Mystic Remedy – Website Structure
+
+## Website Type
+
+Spiritual / Astrology Consultation & Remedy Services Website
+
+---
+
+## Main Navigation Menu
+
+* Home
+* About TMR
+* Services
+* Products
+* Gallery
+* Contact / Book Consultation
+
+---
+
+## Home Page
+
+**Purpose:** First impression, trust building, and clear call-to-action
+
+**Sections:**
+
+* Hero Section (Tagline + CTA: *Book Consultation on WhatsApp*)
+* Brief Introduction of *The Mystic Remedy*
+* Key Services Highlights (3 cards)
+* Problem Areas We Solve
+* Featured Products (catalog preview)
+* Testimonials (optional)
+* Call to Action (WhatsApp / Call)
+
+---
+
+## About TMR
+
+**Purpose:** Build credibility and spiritual trust
+
+**Sections:**
+
+* About The Mystic Remedy
+* Philosophy & Spiritual Approach
+* Experience & Expertise
+* Why Choose Us
+* Mission & Vision
+
+---
+
+## Services
+
+### Main Services
+
+1. **Astrology Consultation**
+
+   * Horoscope Reading
+   * Kundli Analysis
+   * Future Guidance
+
+2. **Numerology Guidance**
+
+   * Name Numerology
+   * Mobile / Business Numerology
+   * Lucky Numbers & Remedies
+
+3. **Paranormal & Energy Cleansing**
+
+   * Aura Cleansing
+   * Space Energy Cleaning
+   * Negative Energy Removal
+
+---
+
+### Problem-Based Services (Same Page Sections)
+
+* Marriage (Shadi)
+* Love & Relationship
+* Career & Job Issues
+* Business Growth Problems
+* Negative Energy / Nazar
+
+Each section includes:
+
+* Problem description
+* How we help
+* Suggested remedies
+* CTA: *Consult on WhatsApp*
+
+---
+
+## Products Section (Catalog Only)
+
+> ❌ No payment gateway
+> ❌ No cart
+> ✔️ Inquiry via WhatsApp only
+
+**Product Listing Format:**
+
+* Product Image
+* Short Description
+* Price (Optional)
+* WhatsApp Inquiry Button
+
+**Products:**
+
+* Ruhani Oil
+* Ruhani Agarbatti
+* Ruhani Anguthi
+* Ruhani Loh
+* Nazrebad Loh
+* All Stones
+* Loh-e-Qurani
+* Rudraksh
+
+---
+
+## Gallery
+
+**Purpose:** Visual trust & authenticity
+
+* Spiritual Items
+* Consultation Setup
+* Energy Healing Images
+* Client Moments (if any)
+
+---
+
+## Contact / Book Consultation
+
+**Contact Options:**
+
+* WhatsApp Button (Primary)
+* Call Button
+* Simple Contact Form
+
+  * Name
+  * Phone
+  * Message
+
+---
+
+## Footer
+
+* Quick Links
+* Services
+* Products
+* WhatsApp & Call Buttons
+* Disclaimer (Spiritual services results may vary)
+
+---
+
+**Brand Name:** *The Mystic Remedy*
+
+**Primary CTA Everywhere:** WhatsApp Consultation
