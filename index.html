@@ -560,6 +560,15 @@
         }
     </style>
 </head>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<link rel="stylesheet"
+ href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+<script
+ src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js">
+</script>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -817,32 +826,64 @@
             </div>
         </div>
     </section>
+ 
+
 
     <!-- Gallery Section (Placeholder) -->
-    <section id="gallery">
-        <div class="container">
-            <h2>Gallery</h2>
-            <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">A glimpse into our spiritual practices, products, and client testimonials. Visual evidence of positive transformations.</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
-                <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
-                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
-                </div>
-                <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
-                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
-                </div>
-                <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
-                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
-                </div>
-                <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
-                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->  
-                </div>
-            </div>
-        </div>
-    </section>
+   <section id="gallery">
+  <div class="container">
+    <h2>Gallery</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto 40px;">
+      A glimpse into our spiritual practices, products, and client testimonials.
+    </p>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:20px;">
+
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Ruhani Oil.webp">
+          <img src="images/Ruhani Oil.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
+
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Ruhani agarbatti.webp">
+          <img src="images/Ruhani agarbatti.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
+
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Numerology Guidance.jpg">
+          <img src="images/Numerology Guidance.jpg" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
+
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Astrology Consultation.webp">
+          <img src="images/Astrology Consultation.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <script>
+$(document).ready(function () {
+  $('#gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+</script>
+
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
