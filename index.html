@@ -91,7 +91,7 @@
 
         .btn {
             display: inline-block;
-            padding: 12px 30px;
+            padding: 12px 24px;
             background: linear-gradient(45deg, var(--primary-purple), var(--secondary-purple));
             color: white;
             border: none;
@@ -200,9 +200,9 @@
             padding-top: 150px;
             padding-bottom: 100px;
             text-align: center;
-            background-image: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=1491&q=80');
+            background-image: url('images/astrology-back.jpg');
             background-size: cover;
-            background-position: center;
+            background-position:right  center;
             background-attachment: fixed;
             position: relative;
         }
@@ -402,10 +402,13 @@
             background-color: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(212, 175, 55, 0.3);
             border-radius: 8px;
-            color: var(--text-light);
+            color:black
+            /* color: var(--text-light); */
             font-size: 1rem;
             transition: var(--transition);
         }
+
+       
 
         .form-control:focus {
             outline: none;
@@ -554,16 +557,34 @@
             .product-grid {
                 grid-template-columns: 1fr;
             }
+
+            .typing-wrapper {
+  height: 100vh;              /* full screen center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#typing-text {
+  font-size: 48px;
+  font-weight: bold;
+  border-right: 3px solid #000;
+  padding-right: 8px;
+  white-space: nowrap;
+}
+
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
         <div class="container header-container">
             <a href="#home" class="logo">
-                <i class="fas fa-crystal"></i>
-                <span>The Mystic Remedy</span>
+                <img src="images/logo.webp" width="160">
+                <!-- <i class="fas fa-crystal"></i> -->
+                <!-- <span>The Mystic Remedy</span> -->
             </a>
             
             <button class="mobile-menu-btn" id="mobileMenuBtn">
@@ -586,7 +607,10 @@
     <!-- Hero / Home Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>The Mystic Remedy</h1>
+            <div class="typing-wrapper">
+  <h1 id="typing-text"></h1>
+</div>
+
             <p>Discover harmony and balance through ancient wisdom. Expert guidance in astrology, numerology, and paranormal cleansing to illuminate your life's path.</p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn">Book Consultation</a>
@@ -596,15 +620,35 @@
             </div>
         </div>
     </section>
+    <script>
+  const text = "The Mystic Remedy";
+  const speed = 100; // typing speed
+  let i = 0;
+
+  function typeOnce() {
+    if (i < text.length) {
+      document.getElementById("typing-text").textContent += text.charAt(i);
+      i++;
+      setTimeout(typeOnce, speed);
+    }
+  }
+
+  typeOnce();
+</script>
+
 
     <!-- About Section -->
-    <section id="about">
+    <section  id="about">
         <div class="container">
             <h2>About The Mystic Remedy</h2>
             <div style="max-width: 800px; margin: 0 auto;">
-                <p>Welcome to The Mystic Remedy, your sanctuary for spiritual guidance and holistic healing. For over 15 years, we have been helping individuals find clarity, purpose, and peace through ancient esoteric practices.</p>
-                <p>Our founder, a renowned spiritual guide with decades of experience, established The Mystic Remedy to bridge the gap between ancient wisdom and modern life challenges. We combine traditional methods with intuitive insights to provide personalized solutions.</p>
-                <p>At The Mystic Remedy, we believe in the interconnectedness of the universe and our place within it. Our mission is to help you align with your true path, overcome obstacles, and harness positive energies for a fulfilling life.</p>
+                <p>The Mystic Remedy is a results-driven platform for Astrology, Numerology, Paranormal Evaluation, and Energy-Based Guidance. Yahan unnecessary drama, emotional sugarcoating, ya vague predictions nahi milte — yahan sirf accurate calculation, deep analysis, aur practical solutions diye jate hain. Humara kaam simple hai:  Real problem identify karna, energy block decode karna, aur workable remedies dena. Chahe issue personal ho, relationship ka ho, career ka ho, ya long-term financial blockage ka — har case ko mathematical precision + intuitive insight se decode kiya jata hai.</p>
+                <div class="cta-buttons">
+                <a href="#contact" class="btn">Book Consultation</a>
+                <a href="https://wa.me/1234567890" target="_blank" class="btn btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
             </div>
         </div>
     </section>
@@ -616,27 +660,39 @@
             
             <div class="service-categories">
                 <div class="service-card">
-                    <div class="service-icon">
+                    <img src="images/Astrology Consultation.webp" alt="Runani OilAstrology Consultation" style="width:100%; height:200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                    <!-- <div class="service-icon">
                         <i class="fas fa-star-and-crescent"></i>
-                    </div>
+                    </div> -->
                     <h3>Astrology Consultation</h3>
                     <p>Detailed analysis of your birth chart to understand planetary influences on your life, relationships, and destiny. Personalized guidance for important decisions.</p>
+                    <a href="https://wa.me/1234567890?text=I'm interested in Ruhani Anguthi" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
+                        </a>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
+                    <img src="images/Numerology Guidance.jpg" alt="Numerology Guidance" style="width:100%; height:200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                    <!-- <div class="service-icon">
                         <i class="fas fa-square-root-alt"></i>
-                    </div>
+                    </div> -->
                     <h3>Numerology Guidance</h3>
                     <p>Unlock the secrets of numbers to discover your life path, destiny, and personality. Learn how numerical vibrations influence your daily life and future.</p>
+                    <a href="https://wa.me/1234567890?text=I'm interested in Ruhani Anguthi" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
+                        </a>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">
+                    <img src="images/Paranormal & Energy Cleansing.jpg" alt="Ruhani Oil" style="width:100%; height:200px; object-fit: cover; border-radius: 10px; margin-bottom: 20px;">
+                    <!-- <div class="service-icon">
                         <i class="fas fa-ghost"></i>
-                    </div>
+                    </div> -->
                     <h3>Paranormal & Energy Cleansing</h3>
                     <p>Identify and remove negative energies, entities, or blockages from your surroundings. Space cleansing and protection rituals for homes and workplaces.</p>
+                    <a href="https://wa.me/1234567890?text=I'm interested in Ruhani Anguthi" target="_blank" class="btn btn-whatsapp" style="width: 100%;">
+                            <i class="fab fa-whatsapp"></i> Inquire on WhatsApp
+                        </a>
                 </div>
             </div>
             
@@ -678,7 +734,8 @@
                 <!-- Product 1 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-oil-can"></i>
+                        <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-oil-can"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Ruhani Oil</h3>
@@ -692,7 +749,8 @@
                 <!-- Product 2 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-fire"></i>
+                         <img src="images/Ruhani agarbatti.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-fire"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Ruhani Agarbatti</h3>
@@ -706,7 +764,8 @@
                 <!-- Product 3 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-ring"></i>
+                         <img src="images/Ruhani anguthi.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-ring"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Ruhani Anguthi</h3>
@@ -720,7 +779,8 @@
                 <!-- Product 4 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-magnet"></i>
+                         <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-magnet"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Ruhani Loh</h3>
@@ -734,7 +794,8 @@
                 <!-- Product 5 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-shield-alt"></i>
+                         <img src="images/Ruhani agarbatti.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-shield-alt"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Nazrebad Loh</h3>
@@ -748,7 +809,8 @@
                 <!-- Product 6 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-gem"></i>
+                         <img src="images/Ruhani anguthi.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-gem"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>All Stones</h3>
@@ -762,7 +824,8 @@
                 <!-- Product 7 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-book-quran"></i>
+                         <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-book-quran"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Loh-e-Qurani</h3>
@@ -776,7 +839,8 @@
                 <!-- Product 8 -->
                 <div class="product-card">
                     <div class="product-img">
-                        <i class="fas fa-pray"></i>
+                         <img src="images/Ruhani agarbatti.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                        <!-- <i class="fas fa-pray"></i> -->
                     </div>
                     <div class="product-info">
                         <h3>Rudraksh</h3>
@@ -797,16 +861,20 @@
             <p style="text-align: center; max-width: 800px; margin: 0 auto 40px;">A glimpse into our spiritual practices, products, and client testimonials. Visual evidence of positive transformations.</p>
             <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
                 <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i>
+                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
                 </div>
                 <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i>
+                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
                 </div>
                 <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i>
+                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->
                 </div>
                 <div style="background-color: rgba(74, 30, 124, 0.2); height: 200px; border-radius: 10px; display: flex; align-items: center; justify-content: center;">
-                    <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i>
+                    <img src="images/Ruhani Oil.webp" alt="Ruhani Oil" style="width:100%; height:100%; object-fit: cover;">
+                    <!-- <i class="fas fa-images" style="font-size: 3rem; color: var(--accent-gold);"></i> -->  
                 </div>
             </div>
         </div>
@@ -908,7 +976,11 @@
         <div class="container">
             <div class="footer-content">
                 <div>
-                    <div class="footer-logo">The Mystic Remedy</div>
+                    <div class="footer-logo">
+                        <img src="images/logo.webp" width="160">
+                        <h4>The Mystic Remedy</h4>
+                        <!-- <i class="fas fa-crystal"></i>  -->
+                        </div>
                     <p>Guiding you towards spiritual harmony and life balance through ancient wisdom and modern insights.</p>
                 </div>
                 
@@ -942,8 +1014,8 @@
             </div>
             
             <div class="copyright">
-                <p>&copy; 2023 The Mystic Remedy. All rights reserved. | Designed with spiritual intent</p>
-                <p style="font-size: 0.8rem; margin-top: 10px;">Disclaimer: Our services are for guidance purposes only. Results may vary based on individual circumstances and beliefs.</p>
+                <p>&copy; 2023 The Mystic Remedy. All rights reserved.</p>
+               
             </div>
         </div>
     </footer>
