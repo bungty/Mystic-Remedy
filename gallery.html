@@ -47,52 +47,67 @@
     <!-- Hero / Home Section -->
     <section class="hero" id="home">
         <div class="container hero-content">
-            <h1>About us</h1>
+            <h1>Gallery</h1>
             
         </div>
     </section>
 
     <!-- About Section -->
-   <section id="about" class="py-5">
+  
+  <!-- Gallery Section (Placeholder) -->
+   <section id="gallery">
   <div class="container">
-    <div class="row align-items-center">
+    <h2>Gallery</h2>
+    <p style="text-align:center; max-width:800px; margin:0 auto 40px;">
+      A glimpse into our spiritual practices, products, and client testimonials.
+    </p>
 
-      <!-- LEFT IMAGE -->
-      <div class="col-md-5 mb-4 mb-md-0">
-        <img src="images/Astrology Consultation.webp" alt="The Mystic Remedy"
-             class="img-fluid rounded shadow">
+    <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr)); gap:20px;">
+
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Ruhani Oil.webp">
+          <img src="images/Ruhani Oil.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
       </div>
 
-      <!-- RIGHT CONTENT -->
-      <div class="col-md-7">
-        <h2>About The Mystic Remedy</h2>
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Ruhani agarbatti.webp">
+          <img src="images/Ruhani agarbatti.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
 
-        <p>
-          The Mystic Remedy is a results-driven platform for Astrology, Numerology,
-          Paranormal Evaluation, and Energy-Based Guidance. Yahan unnecessary drama,
-          emotional sugarcoating, ya vague predictions nahi milte — yahan sirf accurate
-          calculation, deep analysis, aur practical solutions diye jate hain.
-          <br><br>
-          Humara kaam simple hai: Real problem identify karna, energy block decode
-          karna, aur workable remedies dena. Chahe issue personal ho, relationship ka ho,
-          career ka ho, ya long-term financial blockage ka — har case ko mathematical
-          precision + intuitive insight se decode kiya jata hai.
-        </p>
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Numerology Guidance.jpg">
+          <img src="images/Numerology Guidance.jpg" style="width:100%; height:100%; object-fit:cover;">
+        </a>
+      </div>
 
-        <div class="cta-buttons mt-3">
-          <a href="#contact" class="btn btn-primary me-2">Book Consultation</a>
-
-          <a href="https://wa.me/ +91-9217146766" target="_blank"
-             class="btn btn-success">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-        </div>
+      <div style="background-color:rgba(74,30,124,0.2); height:200px; border-radius:10px;
+                  display:flex; align-items:center; justify-content:center; overflow:hidden;">
+        <a href="images/Astrology Consultation.webp">
+          <img src="images/Astrology Consultation.webp" style="width:100%; height:100%; object-fit:cover;">
+        </a>
       </div>
 
     </div>
   </div>
 </section>
 
+
+    <script>
+$(document).ready(function () {
+  $('#gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    gallery: {
+      enabled: true
+    }
+  });
+});
+</script>
    
 
 
