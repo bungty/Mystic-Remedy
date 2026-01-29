@@ -329,16 +329,17 @@
         /* Products Section */
 .products {
     background-color: rgba(26, 11, 46, 0.9);
+    padding: 60px 0;
 }
 
-/* Vertical List */
+/* Product Grid - Vertical List */
 .product-grid {
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
 
-/* Product Card Base */
+/* Product Card - Horizontal Layout */
 .product-card {
     display: flex;
     align-items: stretch;
@@ -346,15 +347,15 @@
     border-radius: 15px;
     overflow: hidden;
     transition: var(--transition);
-    border: 1px solid rgba(212, 175, 55, 0.1);
+    border: 1px solid rgba(212, 175, 55, 0.12);
 }
 
-/* Alternate Layout: Even cards reverse */
+/* Alternate Left–Right Layout */
 .product-card:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-/* Hover */
+/* Hover Effect */
 .product-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow);
@@ -363,37 +364,69 @@
 
 /* Image Side */
 .product-img {
-    width: 280px;
+    width: 300px;
     background-color: rgba(123, 63, 228, 0.2);
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Desktop Image Crop Style */
 .product-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 /* Content Side */
 .product-info {
-    padding: 20px 25px;
+    padding: 22px 25px;
     flex: 1;
+}
+
+.product-info h3 {
+    margin-bottom: 6px;
+    font-size: 20px;
 }
 
 .product-info p {
     margin-bottom: 12px;
     line-height: 1.6;
+    font-size: 14.5px;
 }
 
-/* Mobile Responsive (All stacked) */
+/* WhatsApp Button */
+.btn-whatsapp {
+    display: block;
+    text-align: center;
+    margin-top: 12px;
+}
+
+/* ================= MOBILE RESPONSIVE ================= */
 @media (max-width: 768px) {
+
+    /* Stack layout */
     .product-card {
         flex-direction: column !important;
     }
 
+    /* Full Image on Mobile */
     .product-img {
         width: 100%;
-        height: 220px;
+        height: auto;
+    }
+
+    .product-img img {
+        width: 100%;
+        height: auto;
+        object-fit: contain; /* FULL image visible */
+    }
+
+    /* Better spacing */
+    .product-info {
+        padding: 18px 18px;
     }
 }
 
