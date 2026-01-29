@@ -327,48 +327,75 @@
 
 
         /* Products Section */
-        .products {
-            background-color: rgba(26, 11, 46, 0.9);
-        }
+.products {
+    background-color: rgba(26, 11, 46, 0.9);
+}
 
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 30px;
-        }
+/* Vertical List */
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
 
-        .product-card {
-            background-color: rgba(74, 30, 124, 0.2);
-            border-radius: 15px;
-            overflow: hidden;
-            transition: var(--transition);
-            border: 1px solid rgba(212, 175, 55, 0.1);
-        }
+/* Product Card Base */
+.product-card {
+    display: flex;
+    align-items: stretch;
+    background-color: rgba(74, 30, 124, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: var(--transition);
+    border: 1px solid rgba(212, 175, 55, 0.1);
+}
 
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow);
-            border-color: var(--accent-gold);
-        }
+/* Alternate Layout: Even cards reverse */
+.product-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
 
-        .product-img {
-            height: 200px;
-            background-color: rgba(123, 63, 228, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: var(--accent-gold);
-        }
+/* Hover */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+    border-color: var(--accent-gold);
+}
 
-        .product-info {
-            padding: 20px;
-        }
+/* Image Side */
+.product-img {
+    width: 280px;
+    background-color: rgba(123, 63, 228, 0.2);
+    flex-shrink: 0;
+}
 
-        .product-info p {
-            min-height: 60px;
-            margin-bottom: 20px;
-        }
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content Side */
+.product-info {
+    padding: 20px 25px;
+    flex: 1;
+}
+
+.product-info p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive (All stacked) */
+@media (max-width: 768px) {
+    .product-card {
+        flex-direction: column !important;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 220px;
+    }
+}
 
         /* Contact Section */
         .contact {
